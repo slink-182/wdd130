@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(36, 34, 34);
+    height: 100vh; 
+}
+
+.image-grid {
+    display: flex; 
+    justify-content: center; 
+    gap: 5%; 
+    margin: 0 auto; 
+}
+  
+.image-grid img {
+    width: 35%; 
+    height: auto; 
+}
+h2 {
+    color:#E2B07B;
+    text-shadow: 2px 2px 4px #363339;
+    margin-top: 0;
+}
+
+h6 {
+    color:#E2B07B;
+    text-shadow: 2px 2px 4px #363339;
+    margin-top: 0;
+}
