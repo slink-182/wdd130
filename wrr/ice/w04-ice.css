@@ -1,0 +1,42 @@
+/* stylesheet for website recreation */
+
+
+body {
+    background-color: rgb(97, 158, 178);
+    text-align: center;
+    color:white;
+    font-family: sans-serif;
+}
+
+h1:hover {
+    color: black;
+
+}
+h2 {
+    max-width: 20%;
+    margin:0 auto;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.bullet-points {
+    color: black;
+    font-size: 14px;
+    font-weight:bold;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 30%;
+}
+
+img {
+    max-width: 10%;
+}
+
+footer {
+    max-width: 27%;
+    padding-top: 20px;
+    margin:0 auto;
+    color: black;
+    font-size:16px;
+    
+}
