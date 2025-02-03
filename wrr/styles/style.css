@@ -4,10 +4,8 @@ body {
     background-color: #023047;
     text-align: center;
 }
+.icon, 
 .logo {
-    width:80px;
-}
-.icon {
     width:80px;
 }
 a:hover {
