@@ -1,8 +1,11 @@
 /* stylesheet for wwr */
+* {
+    padding:0;
+    margin:0;
+}
 body {
     color: #219EBC;
-    background-color: #023047;
-    text-align: center;
+    background-color: #023047;  
 }
 .icon, 
 .logo {
@@ -17,7 +20,7 @@ a:hover {
 }
 #content {
     max-width: 1600px;
-    margin: 0 auto;
+    
 }
 nav a {
     color:#FFB703;
@@ -32,6 +35,7 @@ nav a {
 }
 .button-box {
     text-align: center;
+    background-color: grey;
 }
 main section {
     text-align: center;
@@ -60,6 +64,7 @@ nav a:hover {
     background-color: rgb(21, 21, 21);
     height: 725px;
 }
+
 .msg {
     color: white;
     font-size: 32px;
