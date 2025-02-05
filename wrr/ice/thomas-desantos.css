@@ -1,0 +1,38 @@
+*{
+
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: darkgray;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.header-image {
+    display: block;
+    align-content: center;
+    max-width: 1000px;
+}
+
+.bottom-images {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #636363;
+    padding: 36px 40px;
+
+
+}
+
+.bottom-images img {
+    max-width: 230px;
+    margin:0 auto;
+    border-radius: 50%;
+    border: 12px solid #3f3f3f;
+
+
+}

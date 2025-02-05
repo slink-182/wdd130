@@ -7,10 +7,19 @@ body {
     color: #219EBC;
     background-color: #023047;  
 }
-.icon, 
+
+
+/* small images like logo  */
+.icon {
+    width: 80px;
+}
 .logo {
     width:80px;
+    margin:12px 12px;
 }
+
+
+
 a:hover {
     text-decoration: underline;
     color:#FB8500;
@@ -18,9 +27,13 @@ a:hover {
 #hero-img {
     width:100%;
 }
+
 #content {
     max-width: 1600px;
 }
+
+
+
 nav a {
     color:#FFB703;
     text-align: center;
