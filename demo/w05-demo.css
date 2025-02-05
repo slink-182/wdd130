@@ -1,4 +1,4 @@
-/* set default browser values to 0 */
+/* set default browser values of padding and margin to 0 */
 * { 
     box-sizing: border-box;
     padding:0;
@@ -10,6 +10,9 @@ body {
     max-width: 750px;
     background-color: grey;
     margin: 0 auto;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: medium;   
 }
 
 p {
