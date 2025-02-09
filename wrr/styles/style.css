@@ -1,91 +1,199 @@
 /* stylesheet for wwr */
+/* import fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+/* general */
 * {
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 body {
-    color: #219EBC;
-    background-color: #023047;  
+    background-color: #023047;
+    font-family: "Matemasie", "serif", "sans-serif";
+    font-weight: 400;
+    font-style: normal;
 }
-
-
-/* small images like logo  */
-.icon {
-    width: 80px;
+/* header  */
+header {
+    background-color: #023047;
+    text-align: center;
+   
 }
 .logo {
     width:80px;
-    margin:12px 12px;
+    margin:20px 20px;
+
+}
+/* navigation */
+header nav {
+    text-align: center;
+    font-size: 2em;
+    padding:20px 32px;
+    
+    
+}
+/* nav links  */
+nav a {
+    color: #219EBC;
+    text-decoration: none;
+    padding:16px 32px;
+
+}
+nav a:hover{
+    background-color: rgb(21, 21, 21);
+    border-bottom: 4px solid #FB8500;
+    border-top-right-radius: 12%;
+    border-top-left-radius: 12%;
+    color: #ffffff;
+    
 }
 
-
-
-a:hover {
-    text-decoration: underline;
-    color:#FB8500;
-}
+/* hero */
 #hero-img {
     width:100%;
+    text-align: center;
+    
+}
+
+#hero-msg h1{
+    font-size:2em;  
+    text-align: center;
+    
+}
+#hero-msg h4 {
+    font-size: 1em;
+    text-align: center;
+
 }
 
 #content {
     max-width: 1600px;
+    margin:0 auto;
+    color: #219EBC;
+
+}
+.icon {
+    width: 80px;
+    margin: 12px 12px 0 12px;
 }
 
-
-
-nav a {
-    color:#FFB703;
-    text-align: center;
-    text-decoration: none;
-}
-#hero-msg h1,#hero-msg h4 {
-    text-align: center;
-}
+/* main */
 .button-box {
     text-align: center;
-    background-color: grey;
+    padding: 16px 32px;
+    margin: 28px 0 14px 0;
 }
-main section {
-    text-align: center;
-}
-header {
-    color: #219EBC;
-}
-nav a:hover {
-    color:#FB8500;
-}
-.book,.join {
-    color:#FFB703;
+/* book button  */
+.book {
+    background-color:#FB8500;
+    color: rgb(21, 21, 21);
     text-decoration: none;
+    padding: 16px 32px;
+    font-size: 48px;
+    border-radius: 4%;
+
 }
-.book:hover,.join:hover {
-    color: #FB8500;
+.book:hover {
+    background-color: rgb(21, 21, 21);
+    color: #ffffff;
+
+}
+/* cards */
+.rivers-card,
+.camping-card,
+.rapids-card {
+    font-size: 1em;
+    padding: 12px 12px;
+    text-align: center;
+    
+}
+.card-img {
+    border-radius: 4%;
+    border: 12px solid #001e2d;
+    display: block;
+    margin: 0 auto;
 }
 
+
+/* background break */
 #background {
     background-color: rgb(21, 21, 21);
     height: 725px;
+
 }
+/* final image  */
+.mountains {
+    max-width:800px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* final message before footer */
 .msg {
-    color: white;
-    font-size: 32px;
-    background-color: rgb(21, 21, 21);
+    font-size: 2em;
+    text-align: center;
+    background-color: #001e2d;
+    padding: 12px 12px;
+    margin:12px 0;
+    
 }
+.msg h2 {
+    padding:12px 12px 0 12px;
+    font-size:1em;
+    
+}
+.msg p {
+    padding:12px 12px 0px 12px;
+    font-size:1em;
+    
+}
+/* join button  */
+.join {
+    color: rgb(21, 21, 21);
+    background-color: #FB8500;
+    text-decoration: none;
+    padding:16px 32px;
+    border-radius: 4%;
+    font-size:48px;
+    
+}
+.join:hover {   
+    background-color: rgb(21, 21, 21);
+    color: #ffffff;
+
+}
+
+
+/* footer */
 footer {
     background-color: rgb(21, 21, 21);
-    /* padding-top: 4px; */
-}
-footer a {
-    text-decoration: none;
-    color:#FFB703;
+    line-height: 2.5;
+    
 }
 footer p {
-    font-size: 1.2em;
+    font-size: .8em;
     color: white;
-}    
-footer p a:hover {
-    text-decoration: underline;
-    color:#FB8500;
-}    
+    padding: 12px 12px 0 12px;
 
+}  
+footer p a {
+    color:#FFB703;
+    /* text-align: center; */
+    text-decoration: none;
+
+}
+footer p a:hover{
+    color:#FB8500;
+    text-decoration:underline;
+
+}
+
+/* socials, facebook instagram, twitter etc */
+footer .social {
+    margin: 0 12px;
+    
+}
+footer .social a {
+    text-decoration: none;
+}

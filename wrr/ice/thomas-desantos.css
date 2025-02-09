@@ -2,6 +2,7 @@
 
     margin: 0;
     padding:0;
+    /* this accounts for any borders in use within height and width measures  */
     box-sizing: border-box;
 }
 
