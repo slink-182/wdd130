@@ -1,0 +1,75 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+
+}
+
+main{
+
+    background-color: darkgreen;
+}
+
+/* Hide the checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Image button styles */
+.image-button img {
+    width: 150px; /* Default size */
+    transition: width 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* When the checkbox is checked, enlarge the image */
+input[type="checkbox"]:checked + label img {
+    width: 300px; /* Enlarged size */
+}
+
+.box-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+}
+#red {
+    background-color: red;
+
+}
+#orange {
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+
+    background-color: blue;
+}
+
+#purple{
+
+    background-color: purple;
+}
+
+#magenta {
+
+    background-color: magenta;
+}
+
+#white{
+
+    background-color: white;
+}
