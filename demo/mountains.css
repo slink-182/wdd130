@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #555555;
+}
+
+header {
+    background-color: #ffffff;
+    height: 100px;
+}
+
+
+/* mountain image */
+#mountain-img {
+    width: 100%;
+}
+.text {
+    background-color: #a7a7a7;
+    padding: 12px 12px;
+}
+h1, h2, p {
+    margin-bottom: 12px;
+}
+
+footer {
+    margin-top: 200px;
+    background-color: #111111;
+    color: #ffffff;
+    padding:12px 12px;
+    height: 300px;
+
+
+
+}
