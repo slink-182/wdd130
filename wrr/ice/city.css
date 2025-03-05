@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: #222;
+}
+
+.content {
+    margin-top: 8px;
+    background-color: #fff;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+    font-size: 1.5;
+    
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+}
+.timestamp {
+    font-size: 1em;
+    padding-top: 24px;
+    color: #5a65ab;
+    text-align: center;
+}
+
+.heading {
+    font-weight: 800px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.paragraph {
+    padding: 24px 24px;
+    text-align: center;
+    font-size: 1.4em;
+    color: grey;
+
+}
+
+/* bottom grid bar */
+.bottom-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 36px;
+    background-color:#5a65ab;
+    border-bottom-right-radius:6%;
+    border-bottom-left-radius:6%;
+
+}
+
+
+.bottom-bar h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 12px;
+    
+}
+
+.bottom-bar .top {
+    border-right: 2px solid #777;
+}
+
+.bottom-bar .bot {
+    text-align: center;
+    font-size: .8em;
+    color: #fff;
+    border-right: 2px solid #777;
+    padding-bottom: 24px;
+
+}
+
+.bottom-bar .comment {
+    text-align: center;
+    font-size: .8em;
+    color: #fff;
+    padding-bottom: 24px;
+
+}
+
+sup {
+    font-size: .7em;
+}
+
