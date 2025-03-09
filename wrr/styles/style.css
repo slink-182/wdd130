@@ -316,7 +316,9 @@ footer .social a {
 
 /* faq grid box heading */
 .faq-h1 {
+    font-family: "Matemasie", "serif", "sans-serif";
     text-align: center;
+    font-size: 1.8em;
     margin-bottom: 24px;
 }
 .faq-paragraph {
