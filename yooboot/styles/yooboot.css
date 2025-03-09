@@ -12,7 +12,6 @@ header {
     background-color: #111;
 }
 body {
-    padding-top: 60px;
     max-width: 1400px; 
     margin: 0 auto; 
     font-size: 1em;
@@ -29,9 +28,7 @@ a {
 nav {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     font-size: 1.5em;
-    /* height: 88px; */
     background-color: #111;
     justify-content: space-between;
 }
@@ -74,6 +71,7 @@ nav a {
 }
 
 .home-grid {
+    margin-top: 48px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 4px;
