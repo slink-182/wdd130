@@ -30,16 +30,24 @@ nav {
     align-items: center;
     font-size: 1.5em;
     background-color: #111;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 4px;
+    /* padding: 4px 4px; */
+    
 }
 nav a {
     color: #36d017;
+   
 }
 
 .create-button {
+    display: flex;
+    align-items: center;
     background-color: #222;
-    padding: 8px 12px;
-    border-radius: 10%;
+    height: 40px;
+    border-top-right-radius:10%;
+    border-bottom-right-radius:10%;
+    padding: 0 8px;
 }
 .create-button:hover {
     background-color: #333;
@@ -48,45 +56,64 @@ nav a {
     background-color: #555;
 }
 .logo {
-    height: 60px;
+    position: fixed;
+    left: 0;
+    height: 40px;
     border-radius: 10%;
-    padding: 4px 4px;
+    /* padding: 4px 4px; */
+    margin: 4px 4px;
 }
 .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
     background-color: #111;
-    width: 600px;
-    padding: 8px 12px;
+    width: 20%;
+    height: 40px;
     border: 2px solid #222;
+
+    
 }
 .search-box:hover{
+    width:40%;
+    transition: width 0.4s ease; 
     border: 2px solid #36d017;
     background-color: #111;
 }
 
 .avatar {
+    position: fixed;
+    bottom: 16px;
     height: 60px;
-    border-radius: 10%;
-    padding: 4px 4px;
+    width: 60px;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
     
 }
 
 .home-grid {
-    margin-top: 48px;
+    margin-top: 36px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 4px;
     margin-left: 128px;
+    
 }
 
 .sidebar {
     position: fixed;  
-    top: 60px;
+    top: 48px;
     left: 0;          
     background: #111;
     color: white;
     overflow-y: auto; 
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    border-right: 2px solid #333;
+    
 }
 .sidebar a {
     padding: 16px 16px;
@@ -170,7 +197,7 @@ footer p {
     align-self: center; 
     justify-self: center; 
     width: 100px;
-    height: 40px;
+    padding: 12px;
     font-size: 2em;
     grid-column: 3/4;
     background-color: white;
@@ -277,13 +304,15 @@ footer p {
 @media screen and (max-width: 1000px) {
     .small-sidebar {
         position: fixed;  
-        top: 60px;
+        top: 48px;
         left: 0;          
         background: #111;
         color: white;
         overflow-y: auto; 
         display: flex;
         flex-direction: column;
+        border-right: 2px solid #333;
+        height: 100vh;
     }
     .small-sidebar a {
         text-align: center;
@@ -297,18 +326,22 @@ footer p {
         background-color: #555;
     
     }
+    .small-avatar {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+        position: fixed;
+        bottom: 12px;
+        border-radius: 50%;
+    }
     .sidebar {
         display: none;
     }
     .home-grid {
-        margin-top: 48px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 4px;
         margin-left: 60px;
-    }
-    .search-box {
-        width: 400px;
     }
     .you-grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -329,12 +362,8 @@ footer p {
     .home-grid {
         grid-template-columns: 1fr;
     }
-
     .thumbnail {
         height: 360px;
-    }
-    .search-box {
-        width: 200px;
     }
     .current-subscriptions {
         display: flex;
