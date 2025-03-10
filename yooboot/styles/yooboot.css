@@ -343,7 +343,7 @@ footer p {
     .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 4px;
+        padding:4px;
         margin-left: 60px;
     }
     .you-grid {
