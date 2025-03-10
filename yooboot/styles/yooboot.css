@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 header {
+    position: relative;
     position: fixed;  
     top: 0;           
-    left: 0;          
+    /* left: 0; */
+    right: 0;         
     width: 100%;      
-    z-index: 1000;    
+    z-index: 4;    
     background-color: #111;
+    z-index: 2;
 }
 body {
     max-width: 1400px; 
@@ -32,6 +35,7 @@ nav {
     background-color: #111;
     justify-content: center;
     margin: 4px;
+    margin-left:128px;
     /* padding: 4px 4px; */
     
 }
@@ -47,7 +51,8 @@ nav a {
     height: 40px;
     border-top-right-radius:10%;
     border-bottom-right-radius:10%;
-    padding: 0 8px;
+    justify-content: center;
+    width: 120px;
 }
 .create-button:hover {
     background-color: #333;
@@ -56,27 +61,22 @@ nav a {
     background-color: #555;
 }
 .logo {
-    position: fixed;
-    left: 0;
-    height: 40px;
-    border-radius: 10%;
-    /* padding: 4px 4px; */
-    margin: 4px 4px;
+    width: 128px;
 }
 .search-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 8px;
     position: center;
     background-color: #111;
-    width: 20%;
+    width: 33%;
     height: 40px;
     border: 2px solid #222;
 
-    
 }
 .search-box:hover{
-    width:40%;
+    position: center;
+    width: 66%;
     transition: width 0.4s ease; 
     border: 2px solid #36d017;
     background-color: #111;
@@ -103,15 +103,17 @@ nav a {
 }
 
 .sidebar {
-    position: fixed;  
-    top: 48px;
+    /* position: absolute; */
+    position: fixed;
+    z-index: 3;
+    top: 0;
     left: 0;          
+    height: 100vh;
     background: #111;
     color: white;
     overflow-y: auto; 
     display: flex;
     flex-direction: column;
-    height: 100vh;
     border-right: 2px solid #333;
     
 }
@@ -187,6 +189,7 @@ footer {
     text-align: center;
     padding: 12px;
     margin-top: 100px;
+    margin-left: 130px;
 
 }
 footer p {
@@ -246,11 +249,9 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 128px;
-    padding: 0 4px;
 }
 .user-information {
     grid-column: 1/5;
-    margin-left: 8px;
     height: 360px;
 }
 .you-post {
@@ -270,7 +271,7 @@ footer p {
 }
 .user-banner {
     width: 100%;
-    height: 240px;
+    height: 200px;
     object-fit: cover;
     position: relative;
     z-index: -1;
@@ -281,7 +282,7 @@ footer p {
     height: 120px;
     width: 120px;
     margin-top: -52px;
-    margin-left:12px;
+    margin-left: 12px;
     margin-right: 12px;
     z-index: 1;
 
@@ -290,9 +291,8 @@ footer p {
     font-size: 1.8em;
 }
 .section-name {
-    grid-column: 1/5;
     font-size: 1.8em;
-    margin-left: 8px;
+    margin-left: 140px;
     margin-top: 32px;
 }
 .small-sidebar {
@@ -302,9 +302,10 @@ footer p {
 
 @media screen and (max-width: 1000px) {
     .small-sidebar {
-        position: fixed;  
-        top: 48px;
-        left: 0;          
+        position: fixed;
+        z-index:3;
+        left: 0;
+        top: 0;          
         background: #111;
         color: white;
         overflow-y: auto; 
@@ -324,6 +325,9 @@ footer p {
     .small-sidebar a:active {
         background-color: #555;
     
+    }
+    .logo {
+        width: 61px;
     }
     .small-avatar {
         width: 32px;
@@ -354,6 +358,22 @@ footer p {
         grid-column: 1/3;
     
     }
+    footer {
+        margin-left: 62px;
+    }
+    .section-name {
+        margin-left: 72px;
+    }
+    .search-box {
+        width: 700px;
+    }
+    .search-box:hover {
+        width: 700px;
+    }
+    nav {
+        margin-left: 62px;
+
+    }
     
 }
 
@@ -368,5 +388,17 @@ footer p {
         display: flex;
         grid-column: 1/2;
     }
-
+    .you-thumbnail {
+        height: 360px;
+        
+    }
+    .you-grid {
+        grid-template-columns: 1fr;  
+    }
+    .search-box {
+        width: 400px;
+    }
+    .search-box:hover {
+        width: 400px;
+    }
 }
