@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bakery</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            max-width: 600px;
+            margin: auto;
+            border: 2px solid black;
+        }
+       
+        nav {
+            display:grid;
+            grid-template-columns: 140px 1fr;
+            align-items: center;
+            place-items: center;
+            margin-top: 12px;
+
+        }
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin-right: 12px;
+            margin-left: 24px;
+            margin-bottom: 12px;
+            float: left;
+        }
+        .nav-links {
+            height: 28px;
+            grid-column:2/3;
+            display: flex;
+
+        }
+        nav a {
+            padding: 4px 24px;
+            border: 2px solid black;
+        }
+        nav a:hover {
+            background-color: #888;
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        .highlight {
+            background-color: #888;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 200px 200px 200px;
+            row-gap: 48px;
+            margin: 24px 24px;
+        }
+        .heading {
+            grid-column:1/3;
+        }
+        .text-content {
+            width: 100%; height: 100%;
+            padding: 0 12px;
+        }
+        .image {
+            width: 100%; height: 100%;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1f 1fr;
+            height: 200px;
+            padding: 12px 24px;
+        }
+        .socials {
+            grid-column: 3/4;
+        }
+        .socials img {
+            height:64px; width:64px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="" alt="">
+            <div class="nav-links">
+                <a class="highlight" href="">Home</a>
+                <a href="">Baked Goods</a>
+                <a href="">Order Form</a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="heading">
+            <h1>Welcome to Nana's Bakery!</h1>
+            <p>We're delighted you have found us! Please enjoy a free sample from or delicious selection of treats when you come visit us in person!</p>
+        </div>
+
+        <img src="" alt="" class="image">
+        <div class="text-content">
+            <h1>Custom Cakes</h1>
+            <p>Made-to-order cakes for every occasion. Birthdays, weddings, celebrations, and more!</p>
+        </div>
+
+        <div class="text-content">
+            <h1>Tasty Treats</h1>
+            <p>Cupcakes, cookies, muffins, and more. Come try our tasty treats!</p>
+        </div>
+        <img src="" alt="" class="image">
+    
+        <img src="" alt="" class="image">
+        <div class="text-content">
+            <h1>Fresh Baked Bread</h1>
+            <p>Freshly baked bread right out of the oven. We offer full loaced or by-the-slice, with buffer and homemade jam.</p>
+        </div>
+       
+    </main>
+    <footer>
+        Copyright 2021 
+        <div class="socials">
+            <a href="">
+                <img src="" alt="">
+            </a><a href="">
+                <img src="" alt="">
+            </a><a href="">
+                <img src="" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
