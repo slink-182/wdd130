@@ -8,11 +8,10 @@
 
     <style>
         body {
-            background-color: #000;
             max-width: 1600px;
             margin: auto;
   /* Center the form on the page */
-  text-align: center;
+            text-align: center;
 }
 
 .orange-mountain {
@@ -91,13 +90,12 @@ textarea {
 }
 
 button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 0.5em;
+    /* This extra margin represent roughly the same space as the space
+    between the labels and their text fields */
+    margin-top: 1em;
+    margin-left: 0.5em;
 }
-footer {
-    margin-top: 0;
-}
+
 #feedback {
     background-color: antiquewhite;
     position: absolute;
@@ -108,12 +106,29 @@ footer {
     /* make this element invisible until we are ready for it */
     display: none;      
 }
-.moveDown {
-    /* margin-top: 3em; */
-}
-      
-    </style>
+/* .moveDown {
+    margin-top: 3em;
+} */
 
+/* footer {
+    margin-top: 0;
+} */
+.footer-information {
+    font-size: 1.2em;
+    color: white;
+    padding: 12px 12px 0 12px;
+
+}
+.footer-information a {
+    color:#FFB703;
+    text-decoration: none;
+}
+.footer-information a:hover {
+    color:#FB8500;
+    text-decoration:underline;
+}
+
+    </style>
 
 </head>
 <body>
@@ -135,11 +150,11 @@ footer {
             <form action="/my-handling-form-page" method="post">
                 <p>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
+                <input type="text" id="name" name="user_name">
                 </p>
                 <p>
                 <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
+                <input type="email" id="mail" name="user_email">
                 </p>
                 <p>
                 <label for="msg">Message:</label>
@@ -147,14 +162,14 @@ footer {
                 </p>
                 <p class="button">
                     <button type="submit">Send your message</button>
-                  </p>
+                </p>
             </form>
         </div>
     </main>
     <footer>
-        <p>Dry Oar &copy; 2025 - Mason Cockrum</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="footer-information">Dry Oar &copy; 2025 - Mason Cockrum</div>
+        <div class="footer-information"><a href="site-plan-rafting.html">Site Plan</a></div>
+        <div class="footer-information"><a href="contactus.html">Contact Us</a></div>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
