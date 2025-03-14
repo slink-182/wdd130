@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    max-width: 1400px; 
+    max-width: 1400px;
     margin: 0 auto; 
     font-size: 1em;
     font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@ header {
     right: 0;         
     width: 100%;      
     background-color: #111;
-    z-index: 2;
+    z-index: 3;
 }
 nav {
     display: flex;
@@ -285,7 +285,8 @@ footer p {
 
 }
 .current-subscriptions img {
-    border-radius: 50%;
+    /* border: 4px solid #36d017; */
+    border-radius: 10%;
     height: 80px;
     width: 80px;
     object-fit: cover;
@@ -293,6 +294,7 @@ footer p {
     /* stacks subscriber profiles in an array */
     margin-right:-40px;
     transition: margin .7s ease;
+    z-index: 2;
 }
 .current-subscriptions img:hover {
     margin-right: 0;
@@ -300,22 +302,37 @@ footer p {
 }
 
 .sub-arrow {
-    background-color: #333;
+    position: relative;
+    z-index: 1;
+    background-color: #111;
+    color:#36d017;
+    border:4px solid #36d017;
     border-radius: 50%;
     height: 80px;
     width: 80px;
     margin: 12px 0 12px 6px;
     text-align: center;
     vertical-align: middle;
-    line-height: 80px;
-    font-size: 3em;
+    line-height: 76px;
+    font-size: 5em;
+    font-weight:600;
     transition: margin .7s ease;
 }
-.sub-arrow:hover {
-    background-color: #555;
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.sub-arrow {
+    animation: spin 2s linear infinite;
 }
 .sub-arrow:active {
-    background-color: #777;
+    /* margin-left: 50%; */
+    
+    transition: margin 5s ease-out;
 }
 
 
