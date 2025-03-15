@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=VT323&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,8 @@ body {
     max-width: 1400px;
     margin: 0 auto; 
     font-size: 1em;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "VT323", serif;
     color: #fff;
     background-color: #111;
 }
@@ -95,40 +100,10 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 4px;
-
-    /* margin for wide sidebar */
-
-    /* margin-left: 128px; */
-    
-    /* margin for small sidebar */
     margin-left:60px;
     
 }
 
-.sidebar {
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;          
-    height: 100vh;
-    background: #111;
-    color: white;
-    overflow-y: auto; 
-    display: flex;
-    flex-direction: column;
-    border-right: 2px solid #333;
-    
-}
-.sidebar a {
-    padding: 16px 16px;
-    color: #36d017;
-}
-.sidebar a:hover {
-    background-color: #333;
-}
-.sidebar a:active {
-    background-color: #555;
-}
 
 /* small sidebar */
 .small-sidebar {
@@ -218,19 +193,28 @@ a {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    font-family: "IM Fell Great Primer", Helvetica, sans-serif;
+    
 }
 
-h1, h2 {
-    font-size: 1em; /* Make text consistent */
+.post-text h1 {
+    font-family: "VT323", serif;
+    font-size: 1.1em;
+}
+.post-text h2 {
+    font-size: 1em;
+    color: #777;
+}
+.post-text p {
+    font-family: "VT323", serif;
+    color: #777;
+
 }
 
 h1 {
     font-weight: bold;
 }
 
-h2 {
-    color: #777;
-}
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -314,7 +298,7 @@ footer p {
     text-align: center;
     vertical-align: middle;
     line-height: 76px;
-    font-size: 5em;
+    font-size: 3em;
     font-weight:600;
     transition: margin .7s ease;
 }
@@ -436,7 +420,9 @@ footer p {
         width: 100%;      
         background-color: #111;
         z-index: 2;
-        
+    }
+    .header2 a {
+        color: #36d017;
     }
     nav {
         /* resets default value */
