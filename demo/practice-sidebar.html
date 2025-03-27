@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice sidebar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Langar", system-ui;
+            font-size: 1em;
+            background-color:#777;
+        }
+
+
+        /* header */
+        header {
+            /* background-color: blue; */
+            background-color: #777;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            /* height: 100px; */
+
+        }
+        nav {
+            background-color: #242868;
+            display: flex;
+            justify-content: left;
+            gap: 12px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 4px 4px;
+
+
+        }
+
+
+        /* sidebar */
+        .sidebar {
+            z-index: 0;
+            position: fixed;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #555;
+            width: 200px;
+            height: 100vh;
+            overflow-y:auto;
+        }
+        .links h3 {
+            color: white;
+            padding: 4px 4px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-grow: 1;
+        }
+        .links a {
+            color: white;
+            text-decoration: none;
+            padding:8px 0 8px 32px;
+
+        }
+        .highlight {
+            background-color: #4b6;
+        }
+        .highlight:hover {
+            background: rgb(57, 162, 87);
+        }
+        
+        .sidebar a:not(.highlight):hover {
+            background-color: #444;
+        }
+        .sidebar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+        background-color: #333;
+        border-radius: 4px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+        background-color: #222;
+        }
+
+        main {
+            /* this value has to math the width of the sidebar. */
+            margin-left: 200px;
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap: 8px;
+            
+
+        }
+
+        .dice-image {
+            /* display: block; */
+            width: 100%;
+           
+        }
+        .post-content {
+            grid-column: 3/4;
+            
+        }
+        /* majority of content is stylized here */
+        section {
+            padding: 16px 16px;
+            background-color: #999;
+            border-bottom: 2px solid black;
+            
+        }
+        section h1 {
+            margin-bottom: 16px;
+            
+        }
+        .main-content {
+            grid-column: span 2;
+            
+        }
+        footer {
+            margin-left: 200px;
+            height: 200px;
+            background-color: black;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="links">
+            <a class="highlight" href="index.html">Home</a>
+            <h3>Code</h3>
+            <a href="">HTML&CSS</a>
+            <a href="">JavaScript</a>
+            <a href="">Python</a>
+            <a href="">C</a>
+            <a href="">C#</a>
+            <a href="">C++</a>
+            <h3>Random</h3>
+            <a href="">Youtubers</a>
+            <a href="">Dont Click</a>
+            <a href="">Music</a>
+    
+           
+        </div>
+    </div>
+    
+    <main>
+        <div class="main-content">
+            <img class="dice-image" src="images/dice.avif" alt="">
+            <section>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sint quis, reprehenderit itaque porro molestias, ex laboriosam in beatae tempora earum! Blanditiis est eligendi numquam et fugit dolore, sed repellendus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rem quibusdam recusandae voluptates tenetur fugiat, quidem aut mollitia quam officia pariatur odit error cum modi, excepturi nobis perspiciatis vitae at.</p>
+        </div>
+        <div class="post-content">
+            <section>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, assumenda consequuntur tempore rem saepe quod suscipit maiores ad nobis, illum velit reiciendis, corporis voluptatibus quo eveniet recusandae quaerat iste ipsum.</p>
+            </section>
+            <section>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, assumenda consequuntur tempore rem saepe quod suscipit maiores ad nobis, illum velit reiciendis, corporis voluptatibus quo eveniet recusandae quaerat iste ipsum.</p>
+            </section>
+            <section>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, assumenda consequuntur tempore rem saepe quod suscipit maiores ad nobis, illum velit reiciendis, corporis voluptatibus quo eveniet recusandae quaerat iste ipsum.</p>
+            </section>
+        </div>
+
+
+
+    </main>
+    <footer>
+        Copyright slinkee 2025
+    </footer>
+  
+</body>
+</html>
