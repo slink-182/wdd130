@@ -10,10 +10,16 @@ body {
     max-width: 1400px;
     margin: 0 auto; 
     font-size: 1em;
-    /* font-family: Arial, sans-serif; */
-    font-family: "VT323", serif;
     color: #fff;
     background-color: #111;
+}
+
+h1, h2, h3, h4, a {
+    font-family: "VT323", serif;
+}
+
+p {
+    font-family: helvetica;
 }
 
 /* header */
@@ -33,20 +39,15 @@ nav {
     background-color: #111;
     justify-content: center;
     margin: 4px;
-    /* margin-left:128px; */
     margin-left: 60px;
-    /* padding: 4px 4px; */
-    
 }
 nav a {
     color: #36d017;
-   
 }
 a {
     text-decoration: none;
     color: inherit;
 }
-
 .search-box {
     display: flex;
     align-items: center;
@@ -169,7 +170,7 @@ a {
 
 .post-info {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 10px; 
 }
 
@@ -185,22 +186,9 @@ a {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-family: "IM Fell Great Primer", Helvetica, sans-serif;
-}
-.post-text h1 {
-    font-family: "VT323", serif;
-    font-size: 1.1em;
-}
-.post-text h2 {
-    font-size: 1em;
-    color: #777;
 }
 .post-text p {
-    font-family: "VT323", serif;
     color: #777;
-}
-h1 {
-    font-weight: bold;
 }
 
 /* footer */
@@ -219,7 +207,6 @@ footer p {
 }
 .site-plan {
     padding: 4px 4px;
-    font-size: 1em;
 }
 .site-plan:hover {
     border:2px solid #36d017;
@@ -230,14 +217,14 @@ footer p {
     grid-column: 1/6;
 }
 .top {
-    align-self: center; 
-    justify-self: center; 
     width: 100px;
     padding: 12px;
-    font-size: 2em;
-    grid-column: 3/4;
     background-color: white;
     color: black;
+}
+footer h1 {
+    margin-top: 12px;
+    grid-column: 3/4;
 }
 .top:hover {
     background-color: #36d017;
@@ -341,11 +328,8 @@ footer p {
     margin-left: 12px;
     margin-right: 12px;
 }
-.username {
-    font-size: 1.8em;
-}
 .section-name {
-    font-size: 1.8em;
+    /* font-size: 1.8em; */
     margin-left: 72px;
     margin-top: 32px;
 }
