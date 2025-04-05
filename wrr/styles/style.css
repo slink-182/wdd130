@@ -1,4 +1,3 @@
-
 /* stylesheet for wwr */
 /* import fonts  */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Matemasie&display=swap');
@@ -68,7 +67,7 @@ h1,h2{
 }
 body {
     background-color: #023047;
-    font-weight: 400;
+    font-weight:400;
     font-style: normal;
     font-family:"IM Fell Great Primer";
     

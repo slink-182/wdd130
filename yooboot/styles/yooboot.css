@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=VT323&display=swap');
 
-
-
+/* general */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +15,8 @@ body {
     color: #fff;
     background-color: #111;
 }
+
+/* header */
 header {
     position: relative;
     position: fixed;  
@@ -56,7 +57,6 @@ a {
     height: 40px;
     border: 2px solid #222;
     transition: width 0.4s ease-in;
-
 }
 .search-box:hover{
     position: center;
@@ -70,12 +70,10 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #222;
-    height: 40px; width: 100px;
+    height: 40px; 
+    width: 100px;
     border-top-right-radius:10%;
     border-bottom-right-radius:10%;
-    
-
-    /* padding:0 24px; */
 }
 .create-button:hover {
     background-color: #333;
@@ -83,7 +81,6 @@ a {
 .create-button:active {
     background-color: #555;
 }
-
 .avatar {
     position: fixed;
     bottom: 16px;
@@ -92,18 +89,14 @@ a {
     display: flex;
     align-self: center;
     border-radius: 50%;
-    
 }
-
 .home-grid {
     margin-top: 36px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 4px;
-    margin-left:60px;
-    
+    margin-left: 60px;
 }
-
 
 /* small sidebar */
 .small-sidebar {
@@ -184,19 +177,16 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: gray; /* Placeholder for missing images */
-    object-fit: cover; /* Maintain image aspect ratio */
-    flex-shrink: 0; /* Prevent shrinking */
+    background: gray; 
+    object-fit: cover; 
+    flex-shrink: 0; 
 }
-
 .post-text {
     display: flex;
     flex-direction: column;
     gap: 5px;
     font-family: "IM Fell Great Primer", Helvetica, sans-serif;
-    
 }
-
 .post-text h1 {
     font-family: "VT323", serif;
     font-size: 1.1em;
@@ -208,13 +198,12 @@ a {
 .post-text p {
     font-family: "VT323", serif;
     color: #777;
-
 }
-
 h1 {
     font-weight: bold;
 }
 
+/* footer */
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -223,10 +212,7 @@ footer {
     text-align: center;
     padding: 12px;
     margin-top: 100px;
-    /* wide/normal sidebar */
-    /* margin-left: 130px; */
     margin-left: 60px;
-
 }
 footer p {
     margin-bottom: 8px;
@@ -239,7 +225,6 @@ footer p {
     border:2px solid #36d017;
     color: #36d017;
 }
-
 .info {
     margin-bottom: 12px;
     grid-column: 1/6;
@@ -261,15 +246,12 @@ footer p {
     grid-column:5/6;
 }
 
-
 /* subscriptions page */
 .current-subscriptions {
     display: flex;
     grid-column: 1/4;
-
 }
 .current-subscriptions img {
-    /* border: 4px solid #36d017; */
     border-radius: 10%;
     height: 80px;
     width: 80px;
@@ -284,7 +266,6 @@ footer p {
     margin-right: 0;
     transition: margin .7s ease;
 }
-
 .sub-arrow {
     position: relative;
     z-index: 1;
@@ -314,17 +295,13 @@ footer p {
     animation: spin 2s linear infinite;
 }
 .sub-arrow:active {
-    /* margin-left: 50%; */
-    
     transition: margin 5s ease-out;
 }
-
 
 /* you page */
 .you-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* margin-left: 128px; */
     margin-left: 62px;
     padding: 4px;
 }
@@ -357,25 +334,23 @@ footer p {
 .profile-picture {
     z-index: 1;
     float: left;
-    height: 120px; width: 120px;
+    height: 120px; 
+    width: 120px;
     border-radius: 50%;
     margin-top: -52px;
     margin-left: 12px;
     margin-right: 12px;
-
 }
 .username {
     font-size: 1.8em;
 }
 .section-name {
     font-size: 1.8em;
-    /* prevents overlap with small sidebar and adds spacing (60px +12px) */
     margin-left: 72px;
     margin-top: 32px;
 }
 
-
-
+/* media queries */
 @media screen and (max-width: 1000px) {
     .home-grid {
         display: grid;
@@ -383,36 +358,29 @@ footer p {
         padding:4px;
         margin-left: 60px;
     }
-
-
-    
     .you-grid {
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 60px;
-    }
-    .you-thumbnail {
-        height: 120px;
-    }
-    
-    footer {
-        margin-left: 62px;
     }
     .section-name {
         margin-left: 72px;
     }
 
+    /* navigation */
     nav {
         margin-left: 62px;
-
     }
-    
+    .you-thumbnail {
+        height: 120px;
+    }
+
+    /* footer */
+    footer {
+        margin-left: 62px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .small-sidebar {
-        display: none;
-    }
-
     .header2 {
         position: relative;
         position: fixed;  
@@ -425,12 +393,8 @@ footer p {
         color: #36d017;
     }
     nav {
-        /* resets default value */
         margin:0;
-        /* sets new one */
         margin: 4px;
-        
-        
     }
     .top-small-logo {
         display: block;
@@ -442,13 +406,24 @@ footer p {
     }
     .search-box {
         width: 100%;
-
+        
     }
     .search-box:hover {
         width: 100%;
     }
     .create-button {
         width: 200px;
+    }
+    .home-grid {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .you-grid {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .small-sidebar {
+        display: none;
     }
     .bottom-nav {
         z-index:3;
@@ -462,7 +437,6 @@ footer p {
         overflow-y: auto;
         border-top: 2px solid #333;
         width: 100vw;
-
     }
     .bottom-nav a {
         padding: 12px;
@@ -473,22 +447,14 @@ footer p {
     .bottom-nav a:active {
         background-color: #555;
     }
-
-
     .bottom-logo {
         width: 40px;
         height: 40px;
     }
     .bottom-avatar {
         border-radius: 50%;
-        width: 40x;
+        width: 40px;
         height: 40px;
-
-    }
-
-    .home-grid {
-        grid-template-columns: 1fr;
-        margin: 0;
     }
     .thumbnail {
         height: 360px;
@@ -497,20 +463,15 @@ footer p {
         display: flex;
         grid-column: 1/2;
         margin-top: 38px;
-        
     }
     .you-thumbnail {
         height: 360px;
-        
-    }
-    .you-grid {
-        grid-template-columns: 1fr;
-        margin: 0;
-        
     }
     .section-name {
         margin-left: 12px;
     }
+
+    /* footer */
     footer {
         margin: 0;
         margin-top: 100px;
