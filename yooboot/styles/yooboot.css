@@ -52,7 +52,6 @@ a {
     display: flex;
     align-items: center;
     padding-left: 8px;
-    position: center;
     background-color: #111;
     width: 33%;
     height: 40px;
@@ -60,7 +59,6 @@ a {
     transition: width 0.4s ease-in;
 }
 .search-box:hover{
-    position: center;
     width: 49.5%;
     transition: width 0.4s ease-out;
     border: 2px solid #36d017;
